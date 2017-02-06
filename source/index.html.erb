@@ -8,3 +8,149 @@ title: Le Wagon Middleman boilerplate
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
   </p>
 </div>
+
+
+  <body>
+
+    <!-- Your banner code -->
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+      <div class="banner-content">
+        <h1>Welcome to the jungle</h1>
+        <p>Catch bedbugs and the flu from a new place each week</p>
+        <a class="btn btn-success btn-lg">See diseases</a>
+      </div>
+    </div>
+
+    <!-- Your features code -->
+    <div class="wrapper-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <img src="images/globe.png" width="100" alt="">
+            <br>
+            <h2 class="features-h2">Trot the globe</h2>
+            <p class="light-p">Like you from Harlem</p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <img src="images/dollar.png" width="100" alt="">
+            <br>
+            <h2 class="features-h2">Free money</h2>
+            <p class="light-p">Everything you steal is free.</p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <img src="images/beer.png" width="100" alt="">
+            <br>
+            <h2 class="features-h2">Drunk as fuck</h2>
+            <p class="light-p">See just how drunk and lost you can get.</p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <img src="images/heart.png" width="100" alt="">
+            <br>
+            <h2 class="features-h2">Yo heart will stop</h2>
+            <p class="light-p">Especially in Columbia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper-grey padded">
+      <div class="container">
+        <div class="row">
+          <h2 class="center">Your next trip</h2>
+          <br>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+              <div class="card-category">Paris</div>
+                <div class="card-description">
+                  <h2>Seb's bitchin' pad</h2>
+                  <p>Charming room with patio</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="images/seb.jpg">
+                <a class="card-link" href="#"></a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+              <div class="card-category">Brussels</div>
+                <div class="card-description">
+                  <h2>Anne's dope ass crib</h2>
+                  <p>This shit loud</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="images/anne.jpg">
+                <a class="card-link" href="#"></a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+              <div class="card-category">London</div>
+                <div class="card-description">
+                  <h2>Romain's mom house</h2>
+                  <p>Look at this shit</p>
+                </div>
+                <img class="card-user avatar avatar-large" src="images/romain.jpeg">
+                <a class="card-link" href="#"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Your newsletter code -->
+    <div class="container center padded">
+      <h2>Get news from us</h2>
+      <form action="#" >
+        <div class="form-group form-inline">
+          <p>Leave us your email and get yo bitch ass news from us.</p>
+          <input type="email" class="form-control" placeholder="bob@gmail.com">
+          <input type="submit" value="Subscribe" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+
+
+    <!-- Your footer code -->
+    <div class="footer">
+    <ul class="list-inline">
+      <li><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></li>
+      <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+      <li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+      <li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+    </ul>
+      <br>
+      <p>This is a challenge, completed by Elliott.</p>
+    </div>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
